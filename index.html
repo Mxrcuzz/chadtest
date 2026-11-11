@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chat GPT Mini App</title>
+    <!-- Подключаем скрипт Telegram (нужен для интеграции в будущем) -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="bot-avatar">🤖</div>
+            <div class="bot-info">
+                <h1>AI Assistant</h1>
+                <span class="status">демо-режим</span>
+            </div>
+        </header>
+
+        <main class="chat-messages" id="chat-messages">
+            <!-- Сообщения будут добавляться сюда через JS -->
+            <div class="message bot-message">
+                <div class="message-content">Привет! Я тестовый чат-бот. Напиши что-нибудь, и я отвечу заглушкой. Позже здесь будет реальный ChatGPT.</div>
+            </div>
+        </main>
+
+        <footer class="chat-input-area">
+            <textarea id="message-input" placeholder="Введите сообщение..." rows="1"></textarea>
+            <button id="send-btn" aria-label="Отправить">➤</button>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
